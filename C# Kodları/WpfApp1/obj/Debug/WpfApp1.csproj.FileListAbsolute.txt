@@ -1,0 +1,16 @@
+C:\Users\kadir\Desktop\Visual Studio\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\kadir\Desktop\Visual Studio\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\kadir\Desktop\Visual Studio\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\kadir\Desktop\Visual Studio\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
+C:\Users\kadir\Desktop\Visual Studio\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\kadir\Desktop\Visual Studio\WpfApp1\obj\Debug\App.g.cs
+C:\Users\kadir\Desktop\Visual Studio\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\kadir\Desktop\Visual Studio\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\kadir\Desktop\Visual Studio\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\kadir\Desktop\Visual Studio\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\kadir\Desktop\Visual Studio\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\kadir\Desktop\Visual Studio\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\kadir\Desktop\Visual Studio\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\kadir\Desktop\Visual Studio\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\kadir\Desktop\Visual Studio\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\kadir\Desktop\Visual Studio\WpfApp1\obj\Debug\GeneratedInternalTypeHelper.g.cs

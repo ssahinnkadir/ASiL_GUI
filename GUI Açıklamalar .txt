@@ -1,0 +1,32 @@
+Roll-Pitch-Yaw için dönme animasyonları kullanabilmek için C# WPF türünden proje açtım.
+
+Haberleşirken Arduino Serial'den '1' işaretini aldıkça seriale son 3'ü R-P-Y olacak şekilde 5 farklı sensör verisini
+bir satırda gönderiyor. C# ta da bu 1 işaretini belli aralıklarla göndermek için DispatcherTimer kullandım çünkü
+normal Timer WPF'de sanırım yok.  Bunun yerine Serial'e data geldikçe grafikleri güncelleyecek şekilde bir haberleşme
+için de SerialDataReceivedEventHandler gibi bir yöntem varmış onu da deneyeceğim.
+
+İlk iki veri için elimde sensör olmadığından bir pot bağlayıp 1 ve 2 için aynı veriyi gönderdim, sensör kodları birleşince
+orası değişecek.
+
+Önce C# WPF uygulamasını açıp sonra Arduino'yu başlatmayı denersek hata alacağız çünkü Arduino'da MPU sensörü için kullandığım
+kütüphane önce Serial'e bilgi mesajları yazıyor, C#'a da sayıya dönüştürülemeyen bir veri geldiği için hata veriyor.
+Orası için ya arayüzde ilk başta o mesajları görüntüleyecek ayrı bi Box açacağız ya da Exception ekleyeceğiz. Ya da MPU kütüphanesinde header
+lardan o bilgi mesajı yazdıran kısımları sileriz. Bu haliyle deneyebilmek için önce arduinoyu PC'ye bağlayıp 5-10 sn 
+bekledikten sonra bağla butonuna basmak lazım.
+
+MPU için bulduğum yine en düzgün çalışan kütüphane bu bunda da Roll için zamanla çok az bi 1 derecelik kayma
+olabiliyor, Serial'e float olarak yazdırınca görülebiliyor. Diğer kütüphanelerde bir devir için 220 derece ölçen vs çok
+daha tutarsız sonuçlar vardı. Kütüphane'nin .ino kodunda diğer metodlar da var onları sonra kullanacağımız için silmedim
+karışık görünse de hepsi lazım olacak diye düşünüyorum, zaten #define'ları commentli şekilde hepsi.
+
+R-P-Y animasyonları arasında senkron sorunu olmasın diye Abdürrahim Thread kullan demişti, WPF'de Thread'ler de biraz
+farklı sanırım, onlar yerine yine aynı işi yapan Dispatcher.BeginInvoke kullandım. 
+
+Animasyonlarda sadece gelen verilerde pozitif ya da negatif değere göre image'ları yanlış yöne döndürmüş olabilirim 
+tam hakim değilim hangi eksenin pozitif değerinde ne tarafa dönecek diye. Bir de Roll için baktığımız resimde uçağın
+önünden bakıyor gibi bir algı oluşuyor ama arkadan baktığımızı farzederek döndürdüm.
+
+Şimdilik GUI'de bu kadarını deneyebildim, daha sonra gerekirse Abdürrahim'in dediği DevExpress uygulamalarına da
+bakacağım.
+ 
+

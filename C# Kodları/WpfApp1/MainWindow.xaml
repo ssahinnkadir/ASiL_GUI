@@ -1,0 +1,48 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:Properties="clr-namespace:WpfApp1.Properties" x:Class="WpfApp1.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Slider x:Name="slider" HorizontalAlignment="Left" Margin="207,47,0,0" VerticalAlignment="Top" Height="177" Width="23" Orientation="Vertical" Maximum="103"/>
+        <Label x:Name="label" Content="Yükseklik (m) :" HorizontalAlignment="Left" Margin="160,230,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="____" HorizontalAlignment="Left" Margin="198,257,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="47"/>
+        <Button x:Name="button" Content="Bağlan" HorizontalAlignment="Left" Margin="10,374,0,0" VerticalAlignment="Top" Width="90" Click="button_Click"/>
+        <Button x:Name="button1" Content="Bağlantıyı Kes" HorizontalAlignment="Left" Margin="121,374,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="-0.44,1.8" Click="button1_Click"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="80" Margin="340,44,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.52,-0.08" Source="roll.jpg"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="80" Margin="500,44,0,0" VerticalAlignment="Top" Width="80" Source="pitch.jpg"/>
+        <Image x:Name="image2" HorizontalAlignment="Left" Height="80" Margin="660,44,0,0" VerticalAlignment="Top" Width="80" Source="yaw.jpg"/>
+        <Label x:Name="label3" Content="Roll (°):" HorizontalAlignment="Left" Margin="344,161,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.342,0.615"/>
+        <Label x:Name="label4" Content="Pitch (°):" HorizontalAlignment="Left" Margin="499,161,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.289,1.115"/>
+        <Label x:Name="label5" Content="Yaw (°):" HorizontalAlignment="Left" Margin="661,161,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label6" Content="___" HorizontalAlignment="Left" Margin="383,161,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.079,0.654" Width="49"/>
+        <Label x:Name="label2" Content="___" HorizontalAlignment="Left" Margin="545,161,0,0" VerticalAlignment="Top" Width="49"/>
+        <Label x:Name="label7" Content="___" HorizontalAlignment="Left" Margin="701,161,0,0" VerticalAlignment="Top" Width="39"/>
+        <ProgressBar x:Name="progressBar1" HorizontalAlignment="Left" Height="180" Margin="87,44,0,0" VerticalAlignment="Top" Width="18" Orientation="Vertical">
+            <ProgressBar.DataContext>
+                <Properties:Resources/>
+            </ProgressBar.DataContext>
+        </ProgressBar>
+        <Label x:Name="label8" Content="BATARYA" HorizontalAlignment="Left" Margin="10,230,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.071,0.462"/>
+        <Label x:Name="label9" Content="_______" HorizontalAlignment="Left" Margin="85,261,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label10" Content="GPS" HorizontalAlignment="Left" Margin="331,230,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label11" Content="Enlem:               Boylam:" HorizontalAlignment="Left" Margin="280,249,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label12" Content="_______" HorizontalAlignment="Left" Margin="283,270,0,0" VerticalAlignment="Top" Width="47"/>
+        <Label x:Name="label13" Content="______" HorizontalAlignment="Left" Margin="368,270,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label14" Content="Uçuş Hızı (m/s) :" HorizontalAlignment="Left" Margin="302,325,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label15" Content="________" HorizontalAlignment="Left" Margin="402,325,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.579,-0.038"/>
+        <Label x:Name="label16" Content="Kanat Çırpma Frekansı (Hz) :" HorizontalAlignment="Left" Margin="239,356,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label17" Content="_______" HorizontalAlignment="Left" Margin="402,356,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label18" Content="Sıcaklık (°C):" HorizontalAlignment="Left" Margin="12,321,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label19" Content="_______" HorizontalAlignment="Left" Margin="85,321,0,0" VerticalAlignment="Top" Width="28"/>
+        <Label x:Name="label20" Content="Yüzde (%):" HorizontalAlignment="Left" Margin="12,261,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label21" Content="Voltaj  (V):" HorizontalAlignment="Left" Margin="12,291,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label22" Content="________" HorizontalAlignment="Left" Margin="85,291,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label23" Content="Label" HorizontalAlignment="Left" Margin="302,192,0,0" VerticalAlignment="Top" Width="455"/>
+
+    </Grid>
+</Window>
